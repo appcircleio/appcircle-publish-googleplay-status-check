@@ -1,0 +1,26 @@
+platform: Android
+buildPlatform:
+displayName: "Get Approval from Google Play Console"
+description: "Checks app status on Tracks"
+marketPlace: "GooglePlay"
+runOn: "Server"
+scheduled: true
+inputs:
+- key: "AC_TRACK_TO_CHECK"
+  editorType: select
+  defaultValue: "alpha"
+  options: "alpha,beta,production,internal"
+  isRequired: false
+  title: Select a Release Track to check app status
+  description: "Recommended to check Track that you've sent the app in previous steps"
+  helpText:
+- key: "AC_ACCEPTED_STATUSES"
+  defaultValue: "completed,inProgress"
+  isRequired: false
+  title: Customize statuses with comma if you want to accept as passed
+  description: "completed,inProgress,draft,halted statuses can be used"
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
