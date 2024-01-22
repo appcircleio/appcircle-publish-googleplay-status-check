@@ -1,7 +1,7 @@
 platform: Android
 buildPlatform:
 displayName: "Get Approval from Google Play Console"
-description: "Checks app status on Tracks"
+description: "Get approval for the publish from Google Play"
 marketPlace: "GooglePlay"
 runOn: "Server"
 scheduled: true
