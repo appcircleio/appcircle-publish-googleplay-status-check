@@ -1,6 +1,6 @@
 platform: Android
 buildPlatform:
-displayName: "Get Approval from Google Play Console"
+displayName: "Get Approval from Google Play"
 description: "Get approval for the publish from Google Play"
 marketPlace: "GooglePlay"
 runOn: "Server"
