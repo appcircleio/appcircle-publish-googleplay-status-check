@@ -9,9 +9,9 @@ scheduled: true
 inputs:
 - key: "AC_TRACK_TO_CHECK"
   editorType: select
-  defaultValue: "alpha"
-  options: "alpha,beta,production,internal"
-  isRequired: false
+  defaultValue: "internal"
+  options: "ServerCallRequiredToGetValues"
+  isRequired: true
   title: Select a Release Track to check app status
   description: "Recommended to check Track that you've sent the app in previous steps"
   helpText:
