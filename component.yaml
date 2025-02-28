@@ -13,7 +13,7 @@ inputs:
   options: "ServerCallRequiredToGetValues"
   isRequired: true
   title: Select a Release Track to check app status
-  description: "Recommended to check Track that you've sent the app in previous steps"
+  description: "Recommended to check Track that you've sent the app in previous steps. A valid Google API key is required to list tracks."
   helpText:
 - key: "AC_ACCEPTED_STATUSES"
   defaultValue: "completed,inProgress"
